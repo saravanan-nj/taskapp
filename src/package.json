@@ -1,0 +1,41 @@
+{
+  "name": "taskapp",
+  "version": "1.0.0",
+  "description": "Task Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "keywords": [
+    "tasks"
+  ],
+  "author": "saravanan.n.nj@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@vue/compiler-sfc": "^3.0.0",
+    "dexie": "^3.0.3",
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "bulma": "^0.9.1",
+    "css-loader": "^5.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "js-beautify": "^1.13.0",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "vue-loader": "^16.0.0",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.1"
+  }
+}
