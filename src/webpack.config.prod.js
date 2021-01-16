@@ -5,6 +5,7 @@ const {
 } = require('vue-loader')
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = env => {
     return {
@@ -61,6 +62,10 @@ module.exports = env => {
             new MiniCssExtractPlugin({
                 filename: 'css/styles.css'
             }),
+            new WorkboxPlugin.GenerateSW({
+                clientsClaim: true,
+                skipWaiting: true
+            })
         ]
     }
 };
