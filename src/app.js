@@ -9,6 +9,7 @@ import Cycle from './components/cycle.vue'
 import CreateTask from './components/create_task.vue'
 import CreateZone from './components/create_zone.vue'
 import App from './components/app.vue'
+import { Settings } from './settings.js'
 
 
 // Scss
@@ -23,7 +24,7 @@ import { provideZonesState } from './states/zones.js'
 
 const routes = [
     {
-        path: "/",
+        path: Settings.HOME_PATH,
         name: "Cycles",
         component: Cycles
     },

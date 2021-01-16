@@ -32,6 +32,8 @@
         useCyclesState
     } from '../states/cycles.js';
 
+    import { Settings } from '../settings.js';
+
     export default {
         setup() {
             return {
@@ -54,7 +56,7 @@
                 }).then((cycle) => {
                     this.startDate = null;
                     this.endDate = null;
-                    this.$router.push('/');
+                    this.$router.push(Settings.HOME_PATH);
                     this.loading = false;
                 });
             }
