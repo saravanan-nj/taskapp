@@ -54,7 +54,7 @@
                 }).then((cycle) => {
                     this.startDate = null;
                     this.endDate = null;
-                    this.$router.push('home.html');
+                    this.$router.push('/');
                     this.loading = false;
                 });
             }

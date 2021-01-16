@@ -20,8 +20,8 @@
                 <label class="label">Zone</label>
                 <div class="control">
                     <div class="select">
-                        <select v-model="zoneId">
-                            <option @click="createZone">New Zone</option>
+                        <select v-model="zoneId" @change=checkNewZone>
+                            <option value="New Zone">New Zone</option>
                             <option v-for="zone in zones" v-bind:value="zone.id">
                                 {{zone.name}}
                             </option>
@@ -98,10 +98,12 @@
                     this.loading = false;
                 });
             },
-            createZone(event) {
-                this.$router.push({
-                    'name': 'NewZone'
-                })
+            checkNewZone(event) {
+                if (event.target.value == 'New Zone') {
+                    this.$router.push({
+                        'name': 'NewZone'
+                    })
+                }
             },
             createEditTask(event) {
                 this.loading = true;

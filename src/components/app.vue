@@ -1,7 +1,7 @@
 <template>
     <nav id="nav" class="navbar" role="navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="/home.html">
+            <a class="navbar-item" href="/">
                 <span class="is-size-5 has-text-primary-dark">Tasks</span>
             </a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarItems">

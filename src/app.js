@@ -23,7 +23,7 @@ import { provideZonesState } from './states/zones.js'
 
 const routes = [
     {
-        path: "/home.html",
+        path: "/",
         name: "Cycles",
         component: Cycles
     },
