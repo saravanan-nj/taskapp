@@ -64,7 +64,7 @@ module.exports = env => {
             }),
             new WorkboxPlugin.GenerateSW({
                 clientsClaim: true,
-                skipWaiting: true
+                skipWaiting: true,
             })
         ]
     }

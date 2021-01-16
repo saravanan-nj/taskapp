@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="manifest.json" />
     <title>Tasks</title>
-    <link rel="stylesheet" href="src/dist/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div id="app">
     </div>
-    <script src="src/dist/main.js"></script>
+    <script src="./main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
@@ -43,7 +43,9 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('src/dist/service-worker.js').then(registration => {
+                navigator.serviceWorker.register('./service-worker.js', {
+                    scope: '/'
+                }).then(registration => {
                     console.log('SW registered: ', registration);
                 }).catch(registrationError => {
                     console.log('SW registration failed: ', registrationError);
