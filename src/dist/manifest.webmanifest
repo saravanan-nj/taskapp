@@ -1,0 +1,21 @@
+{
+    "name": "TaskApp",
+    "short_name": "TA",
+    "description": "Task App Tracks the Tasks",
+    "start_url": "/taskapp/",
+    "display": "fullscreen",
+    "theme_color": "#FFFFFF",
+    "background_color": "#fff",
+    "icons": [
+        {
+	    "src": "./images/icon.png",
+	    "sizes": "256x256",
+	    "type": "image/png"
+	},
+        {
+	    "src": "./images/icon192.png",
+	    "sizes": "192x192",
+	    "type": "image/png"
+	}
+    ]
+}
